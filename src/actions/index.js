@@ -55,7 +55,7 @@ export function signOutUser() {
 export function fetchMessage() {
   return function (dispatch) {
     axios.get(ROOT_URL, {
-      headers: {autorization: localStorage.getItem('token')}
+      headers: {authorization: localStorage.getItem('token')}
     })
       .then(response => {
         console.log(response)
